@@ -1,0 +1,113 @@
+/* Custom fonts*/
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/work-sans/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/work-sans/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Freigest";
+  src: url("./assets/fonts/freigest/freigeist-bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+/*
+  CSS RESET
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  scrollbar-gutter: stable;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Global Styles*/
+
+:root {
+  --yellow-bg-col: #fafaf6;
+  --dark-text-col: #323232;
+  --darker-text-col: #000000;
+  --accent-col: #255644;
+  --accent-hover-col: #5dba82;
+  --light-gray-col: #dfdfdf;
+  --dark-gray-col: #999999;
+  --white-col: white;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: var(--dark-text-col);
+  background-color: var(--yellow-bg-col);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Freigest", sans-serif;
+  font-weight: 600;
+  color: var(--dark-text-col);
+}
+
+h1,
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+}

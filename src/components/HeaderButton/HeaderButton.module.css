@@ -1,0 +1,12 @@
+.header_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.header_button_wrapper > a {
+  text-decoration: none;
+  color: var(--darker-text-col);
+}
